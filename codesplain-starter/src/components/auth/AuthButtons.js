@@ -3,7 +3,7 @@ import useUser from '../../hooks/useUser';
 
 function AuthButtons() {
   const { user, isLoading } = useUser();
-
+ 
   if (isLoading) {
     return null;
   } else if (user) {
@@ -36,3 +36,4 @@ function AuthButtons() {
 }
 
 export default AuthButtons;
+ 
